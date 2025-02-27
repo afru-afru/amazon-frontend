@@ -1,0 +1,16 @@
+.hero__img{
+    position:relative;
+}
+
+.hero__img img{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 1000%;
+    height: 300px;
+    border-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255,0),
+        rgba(255,255,255)
+    );
+}
