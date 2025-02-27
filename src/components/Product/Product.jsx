@@ -1,4 +1,4 @@
-// import React from 'react'
+
 
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -10,8 +10,9 @@ function Product() {
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   useEffect(() => {
+    setIsLoading(true);
     axios
-      .get("/api/products")
+      .get("https://fakestoreapi.com/products")
       .then((res) => {
         console.log("res" + res);
         setProducts(res.data);
